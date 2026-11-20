@@ -1,0 +1,5 @@
+node_modules/
+dsh-look.local.json
+.test-home/
+.test-index.js*
+*.tgz
