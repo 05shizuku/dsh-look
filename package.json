@@ -1,0 +1,44 @@
+{
+  "name": "dsh-look",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "description": "视觉 consent：默认不看，主动看必留痕，可拒绝。",
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./look": "./src/index.mjs",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "src/",
+    "test/",
+    "tools/",
+    "locale/",
+    "icon.svg",
+    "dsh.bundle.patch.yml",
+    "dsh-look.example.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.1.7-rc.2 <0.3.0-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./dsh.bundle.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "vision",
+    "consent",
+    "computer-use"
+  ],
+  "license": "MIT"
+}
