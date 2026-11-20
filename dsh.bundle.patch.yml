@@ -1,0 +1,12 @@
+# dsh-look/dsh.bundle.patch.yml
+# ASCII-only on purpose (PS 5.1 reads UTF-8 as GBK).
+#
+# What this bundle does:
+#   1. Mounts the dsh-look plugin (vision consent: look_mode tool, flag-file manager).
+#   2. The passive-vision flag file is consumed by the orb's patched pre-step hook
+#      (see orb-amikar\tools\rebuild-firstframe-patch.ps1).
+
+- insert:
+    - id: dsh-look
+      name: 'dsh-look/look'
+      config: {}
